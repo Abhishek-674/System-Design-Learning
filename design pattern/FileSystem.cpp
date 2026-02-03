@@ -81,3 +81,31 @@ int main()
 
     return 1;
 }
+
+
+/*
+Key Participants
+Client
+Component (interface / abstract class)
+Leaf
+Composite
+
+
+        Client
+          |
+          v
+      <<interface>>
+        Component
+        + operation()
+
+    is-a     ▲.      is-a
+     ┌───────┴────────┐
+     |                |
+   Leaf           Composite
+    (file)           ◆ (folder)
+                    | has a
+               Component (children)
+Leaf is a 
+composite is a and has a (both relation exits)
+
+*/
